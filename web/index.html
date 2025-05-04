@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Changa+One:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Gloock&family=Great+Vibes&family=Modak&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Changa+One:ital@0;1&family=Cormorant+Garamond:wght@600&family=Gloock&family=Great+Vibes&family=Modak&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Changa+One:ital@0;1&family=Cormorant+Garamond:wght@600&family=Gloock&family=Great+Vibes&family=Modak&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="hero-section" style="background-image: url('img/log1.jpeg'); background-size: cover; background-position: center;">
+        <div class="overlay">
+            <nav class="navbar">
+                <img src="img/logo1.png" alt="Logo Don's Sushi" class="logo">
+                <ul class="nav-links">
+                    <li><button onclick="window.location.href='#todays-special'" class="nav-button">Especial</button></li>
+                    <li><button onclick="window.location.href='#sobre'" class="nav-button">Sobre</button></li>
+                    <li><button onclick="window.location.href='#contato'" class="nav-button">Contato</button></li>
+
+                </ul>
+                <a href="reservas.html" class="btn reservation-btn">Reservas</a>
+            </nav>
+            <div class="hero-content">
+                <p class="sub-heading transcricao">Melhor sushi da cidade</p>
+                <h1 class="main-heading transcricao">PROVE O SABOR DO <br> SUSHI DE ALTA QUALIDADE</h1>
+                <p class="description transcricao">Nós usamos a qualidade cinco estrelas <br> em nosso menu, venha desfrutar da riqueza de<br> sabores que servimos em cada prato!</p>
+                <a href="menu.html" class="btn menu-btn">Menu</a>
+              
+            </div>
+        </div>
+    </header>
+    <button id="backToTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="back-to-top" style="display: none;">↑</button>
+
+<section class="todays-special" id="todays-special">
+    <div class="special-menu">
+        <h2 class="section-title transcricao">Especial</h2>
+        <p class="section-description transcricao">Confira abaixo nossos itens especiais!</p>
+        <div class="special-items-container">
+            <div class="special-item">
+                <img src="img/uramaki.jpeg" alt="uramaki" class="special-item-img">
+                <h3 class="special-item-title transcricao">Uramaki Filadélfia</h3>
+                <p class="special-item-description transcricao">Arroz por fora da alga recheado com salmão e cream cheese. <br> 8 unidades.</p>
+            
+                <a href="#order" class="btn order-btn">Faça seu pedido</a>
+            </div>
+            <div class="special-item">
+                <img src="img/sunomono.jpeg" alt="sunomono" class="special-item-img">
+                <h3 class="special-item-title transcricao">Sunomono Sakary</h3>
+                <p class="special-item-description transcricao">Salada de pepino japonês com salmão e kani.</p>
+            
+                <a href="#order" class="btn order-btn">Faça seu pedido</a>
+            </div>
+            <div class="special-item">
+                <img src="img/uramaki2.jpeg" alt="uramaki2" class="special-item-img">
+                <h3 class="special-item-title transcricao">Uramaki Filadélfia Especial</h3>
+                <p class="special-item-description transcricao">Arroz por fora da alga recheado com salmão e cream cheese com uma capa de salmão com gergelim. <br> 10 unidades.</p>
+                
+                <a href="#order" class="btn order-btn">Faça seu pedido</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section" id="sobre">
+    <h2 class="about-title">Sobre</h2>
+    <div class="about-content">
+        <div class="about-images">
+            <img src="img/sobre.jpeg" alt="Chef preparando comida" class="about-img">
+        </div>
+        <div class="about-text">
+            <p class="transcricao">O Sakary é um restaurante japonês que se destaca pela qualidade de seus pratos. Combinamos ingredientes frescos e técnicas tradicionais para criar uma experiência gastronômica única e memorável.</p>
+            <p class="transcricao">Nossa equipe de chefs prepara cada prato com atenção aos detalhes, garantindo que cada refeição seja uma celebração de sabor. No Sakary, acreditamos que cada cliente merece o melhor.</p>
+            <p class="transcricao">O nosso ambiente elegante e acolhedor convida você a relaxar e aproveitar o melhor da culinária japonesa, sempre com um atendimento de excelência!</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section" id="contato" >
+    <div class="contact-content">
+        <div class="contact-info">
+            <p><span class="contact-icon transcricao">📍</span> Rua Jacob Holzmann, 87</p>
+            <p><span class="contact-icon transcricao">📞</span> (42) 30894790</p>
+        </div>
+        <img src="img/semfundo.png" alt="semfundo" class="contact-content">
+    </div>
+</section>
+<script src="script.js"></script> 
+</body>
+
+</html>

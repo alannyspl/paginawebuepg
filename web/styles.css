@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6); 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.logo {
+    width: 160px;
+    height: auto;
+    position: relative;
+    left: 100px;
+    margin-top: 25px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+    width: 100%; 
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.reservation-btn {
+    padding: 10px 20px;
+    border: 1px solid #fefefe;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 105px;
+    
+}
+.reservation-btn:hover {
+    background-color: #ffffff;
+    color: #000
+
+}
+
+.hero-content {
+    text-align: center; 
+    color: 4B000F;
+    z-index: 2;
+    position: relative; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100%; 
+}
+
+.sub-heading {
+    font-style: cursive;
+    color: #fff;
+    font-family: "Great Vibes";
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.main-heading {
+    font-size: 52px;
+    font-weight: bold;
+    margin: 20px 0;
+    font-family: "SemiBold 600";
+    letter-spacing: 2px;
+    color: #B71C1C
+}
+
+.description {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 30px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+}
+
+.menu-btn {
+    padding: 10px 20px;
+    background-color: #B71C1C ;
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    font-size: 19px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-btn:hover {
+    background-color: #B71C1C ;
+}
+.nav-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 25px;
+}
+
+.nav-button:hover {
+    background-color: #fefefe;
+    color: #000;
+}
+
+
+/* Estilos para a seção Today's Special */
+.todays-special {
+    padding: 50px;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Semi Bold 600';
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #B71C1C;
+}
+
+.section-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.special-items-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.special-item {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.special-item-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.special-item-title {
+    font-family: 'Semi Bold 600';
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #B71C1C;
+}
+
+.special-item-description {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+    text-align: center;
+    
+}
+
+.special-item-rating {
+    font-size: 18px;
+    color: #B71C1C;
+    margin-bottom: 20px;
+}
+
+.order-btn {
+    background-color: transparent;
+    color: #f8e8e8;
+    border: 1px solid #B71C1C;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #B71C1C;
+    color: #ccc;
+}
+
+
+/* Estilos para a seção Sobre */
+.about-section {
+    padding: 50px;
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+}
+
+.about-title {
+    font-family: "SemiBold 600";
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #B71C1C;
+}
+
+.about-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    max-width: 45%;
+    text-align: left;
+}
+
+.about-text p {
+    font-family: Playfair Display, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+
+/* Estilos para a seção de contato */
+.contact-section {
+    padding: 50px 50px 5px;
+    background-color: #000;
+
+}
+
+.contact-title {
+    font-family: 'SemiBold 600';
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #B71C1C;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: white
+}
+
+.contact-icon {
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact-content img {
+    max-width: 150px; 
+    margin-bottom: 20px; 
+    margin-top: 10px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+
+/* Estilo para o botão de voltar ao topo */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #B71C1C;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #fff;
+    color: #1c1c1c;
+}
+
+
+/* Estilos para a seção de itens do menu */
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 50px;
+    background-color: #1c1c1c;
+}
+
+.menu-item {
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.menu-item:nth-child(even) {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-item:nth-child(odd) {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-item-img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-item-info {
+    width: 50%;
+    padding: 20px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.menu-item-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #B71C1C;
+}
+
+.menu-item-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.menu-item-price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #B71C1C;
+}
+
+.menu-header-title {
+    font-family: Playfair Display, serif;
+    color: #B71C1C;
+    font-size: 36px;
+    text-align: center;
+    background-color: #1c1c1c;   
+}
+
+
+/* Estilos para a seção de reserva */
+.reservation-form-section {
+    padding: 50px;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+}
+
+.reservation-title {
+    font-family: 'SemiBold 600';
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #B71C1C;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.reservation-form label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+
+.reservation-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.reservation-submit-btn {
+    padding: 15px 30px;
+    background-color: #B71C1C;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.reservation-submit-btn:hover {
+    background-color: #fff;
+    color: #121212;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
